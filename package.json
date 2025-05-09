@@ -1,0 +1,23 @@
+{
+  "name": "beat-time-bot",
+  "module": "index.ts",
+  "main": "index.ts",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "start": "pnpm exec tsx ."
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "@slack/bolt": "^4.3.0",
+    "chrono-node": "^2.8.0",
+    "dot-beat-time": "^1.2.1",
+    "dotenv": "^16.5.0"
+  },
+  "devDependencies": {
+    "@ngrok/ngrok": "^1.5.1",
+    "@types/node": "^22.15.17"
+  }
+}
