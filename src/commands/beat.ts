@@ -134,7 +134,7 @@ export default async function beatCommand(ctx: SlackCommandMiddlewareArgs & AllM
 
         await ctx.ack({
             response_type: 'ephemeral',
-            text: `A beat was passed... the current time is @${beat} or ${now.toLocaleTimeString(undefined, {
+            text: `A beat was passed... the resulting time is @${beat} or ${result.toLocaleTimeString(undefined, {
                 hour: '2-digit',
                 minute: '2-digit',
                 timeZoneName: 'short',
